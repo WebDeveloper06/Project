@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Bootstrap Css CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- External Css Sheet -->
+    <link rel="stylesheet" href="./Sign up.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5 bg-white m-auto form-box">
+                <div>
+                    <h3 class="text-center pt-4">Creat Account?</h3>
+                </div>
+                <form action="" class="p-5">
+                    <!-- User Name -->
+                    <div id="user-field">
+                        <input class="form-control" type="text" name="" placeholder="Full Name" id="user-name" required maxlength="18" title="Ex.- Ram Sharma" onkeyup="username()">
+                        <span id="icons">
+                            <i class="fa-solid fa-circle-check fa-xs"></i>
+                            <i class="fa-solid fa-circle-xmark fa-xs"></i>
+                        </span>
+                    </div>
+                    <!-- User Email Address -->
+                    <div id="email-field">
+                        <input class="form-control" type="email" name="" placeholder="Email Address" id="user-email" required maxlength="30" title="Ex.- Ab3@gmail.com" onkeyup="useremail()">
+                        <span id="icons">
+                            <i class="fa-solid fa-circle-check fa-xs"></i>
+                            <i class="fa-solid fa-circle-xmark fa-xs"></i>
+                        </span>
+                    </div>
+                    <!-- User Password -->
+                    <div id="password-field">
+                        <input class="form-control" type="password" name="" placeholder="Password" id="user-password" required maxlength="12" title="Ex.- @A1b&C#3" onkeyup="userpassword()">
+                        <span id="icons">
+                            <i class="fa-solid fa-circle-check fa-xs"></i>
+                            <i class="fa-solid fa-circle-xmark fa-xs"></i>
+                        </span>
+                    </div>
+                    <!-- User Confirm Password -->
+                    <div id="confirm-password-field">
+                        <input class="form-control" type="text" name="" placeholder="Confirm Password"
+                        id="user-confirm_password" required maxlength="12" title="Ex.- @A1b&C#3" onkeyup="userconfirmpassword()">
+                        <span id="icons">
+                            <i class="fa-solid fa-circle-check fa-xs"></i>
+                            <i class="fa-solid fa-circle-xmark fa-xs"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <button class="btn btn-success col-12">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./Sign up.js"></script>
+</body>
+</html>
