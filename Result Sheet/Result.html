@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Sheet</title>
+    <!-- CSS -->
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 1px;
+        }
+
+        table {
+            height: 50%;
+            width: 455px;
+            border: 2px solid;
+        }
+
+        tr {
+            margin: 0px;
+            text-align: left;
+            border: 2px solid black;
+        }
+
+        input {
+            height: 50%;
+            width: 70%;
+            margin-left: 17px;
+            text-align: center;
+            font-weight: bold;
+           padding-right:5px;
+           border: non;
+        }
+
+        .heading {
+            text-align: center;
+            background-color: aqua;
+        }
+        
+        .Total,.Grade{
+            width: 45%;
+            padding: 2px;
+            margin: 2px;
+        }
+       
+        .grade{
+            text-align: center;
+            background-color: cadetblue;
+        }
+
+        .total{
+            background-color: darkgrey;
+            
+        }
+
+        .Subject{
+            background-color: rgb(222, 101, 15);
+        }
+
+        .Theory{
+            background-color: rgb(242, 8, 54);
+        }
+
+        .Project{
+            background-color: rgb(248, 46, 10);
+        }
+
+        .button{
+            width: 40px;
+            border-radius: 5px;
+            background-color: firebrick;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Table -->
+    <table border="">
+        <!-- Heading -->
+        <tr class="heading">
+            <th>SUBJECT</th>
+            <th>THEORY</th>
+            <th>PROJECT</th>
+        </tr>
+        <!-- Bengali -->
+        <tr>
+            <th class="Subject">Bengali</th>
+            <!-- Bengali Theory -->
+            <td class="Theory"><input type="text" maxlength="3" placeholder="000" id="BengaliTheory" required></td>
+            <!-- Bengali Project -->
+            <td class="Project"><input type="text" maxlength="3" placeholder="000" id="BengaliProject"></td>
+        </tr>
+        <!-- English -->
+        <tr>
+            <th class="Subject">English</th>
+            <!-- English Theory -->
+            <td class="Theory"><input type="text" maxlength="3" placeholder="000" id="EnglishTheory" required></td>
+            <!-- English Project -->
+            <td class="Project"><input type="text" maxlength="3" placeholder="000" id="EnglishProject"></td>
+        </tr>
+        <!-- Math -->
+        <tr>
+            <th class="Subject">Math</th>
+            <!-- Math Theory -->
+            <td class="Theory"><input type="text" maxlength="3" placeholder="000" id="MathTheory" required></td>
+            <!-- Math Project -->
+            <td class="Project"><input type="text" maxlength="3" placeholder="000" id="MathProject" required></td>
+        </tr>
+        <!-- Science -->
+        <tr>
+            <th class="Subject">Science</th>
+            <!-- Science Theory -->
+            <td class="Theory"><input type="text" maxlength="3" placeholder="000" id="ScienceTheory"></td>
+            <!-- Science Project -->
+            <td class="Project"><input type="text" maxlength="3" placeholder="000" id="ScienceProject"></td>
+        </tr>
+        <!-- History -->
+        <tr>
+            <th class="Subject">History</th>
+            <!-- History Theory -->
+            <td class="Theory"><input type="text" maxlength="3" placeholder="000" id="HistoryTheory" required></td>
+            <!-- History Project -->
+            <td class="Project"><input type="text" maxlength="3" placeholder="000" id="HistoryTheory"></td>
+        </tr>
+        <!-- Geography -->
+        <tr>
+            <th class="Subject">Geography</th>
+            <!-- Geography Theory -->
+            <td class="Theory"><input type="text" maxlength="3" placeholder="000" id="GeographyTheory"></td>
+            <!-- Geography Project -->
+            <td class="Project"><input type="text" maxlength="3" placeholder="000" id="GeographyProject" required></td>
+        </tr>
+        <tr>
+            <!-- Total -->
+            <th class="total"><input class="button" type="button" value="Total" title="Clike Me" onclick="Calculate()"> =<input class="Total" id="mark" type="text" maxlength="3" placeholder="000"></th>
+            <!-- Grade -->
+            <th colspan="2" class="grade">Grade &nbsp; =<input  class="Grade"  type="text" maxlength="2" placeholder="A+"></th>
+        </tr>
+    </table>
+<!-- Java Script -->
+<script src="./Result.js"></script>
+</body>
+</html>
